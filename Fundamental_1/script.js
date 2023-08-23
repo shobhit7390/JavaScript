@@ -57,7 +57,7 @@ year=2001;
 console.log(typeof year);
 
 console.log(typeof null);
-*/
+
 
 
 // let, const, var
@@ -73,4 +73,44 @@ job='teacher';
 
 lastName='Yadav';
 console.log(lastName);
+*/
+
+// Math Operators
+
+const now=2037;
+
+let ageJonas=now-1991;
+let ageSarah=now-2018;
+
+console.log(ageJonas, ageSarah);
+
+console.log(ageJonas*2, ageJonas/10, 2**3);
+
+
+const firstName='Shobhit';
+const lastName='Yadav';
+
+console.log(firstName+' '+lastName);
+
+
+let x=10+5;
+x+=10;
+x*=4;
+x++;
+x--;
+x--;
+
+console.log(x);
+
+// Comparison Operators
+
+// >, <, >=, <=, ==, etc
+
+
+
+
+
+
+
+
 
