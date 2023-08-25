@@ -104,7 +104,7 @@ console.log(x);
 
 // Comparison Operators : >, <, >=, <=, ==, etc
 
-*/
+
 
 // Strings and Template Literals
 
@@ -129,8 +129,29 @@ console.log(`String
 multiple 
 lines`);
 
+*/
+
+// Taking decisions if-else statement
+
+const age=16;
+
+if(age>=18){
+    console.log('Sarah can start driving !');
+} else {
+    const yearsLeft=18-age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+}
 
 
+const birthYear=2015;
+let century;
+
+if(birthYear <= 2000){
+    century=20;
+} else {
+    century=21;
+}
+console.log(century);
 
 
 
