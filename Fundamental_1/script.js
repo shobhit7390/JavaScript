@@ -182,6 +182,8 @@ console.log(n);
 
 // 5 Falsy values: 0, '', undefined, Nan, null
 
+/*
+
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean('Jonas'));
@@ -202,3 +204,27 @@ if(height){
 } else {
     console.log("Height is undefined !")
 }
+
+*/
+
+const age='18';
+if(age === 18) console.log("You just became Adult!(strict comaprison)")
+
+
+if(age == 18){
+    console.log("You just became Adult!(loose comparison)")
+}
+
+const favourite=prompt("Enter you favourite number:")
+console.log(favourite)
+console.log(typeof favourite)
+
+if(favourite == 7){   // '12' == 12
+    console.log("Cool! 7 is an amazing number")
+} else if(favourite === 18){
+    console.log("18 is also a cool number")
+} else{
+    console.log("Number is not 7 or 18")
+}
+
+if(favourite !== 46) console.log("Why not 46?")
