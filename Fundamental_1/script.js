@@ -207,6 +207,8 @@ if(height){
 
 */
 
+/*
+
 const age='18';
 if(age === 18) console.log("You just became Adult!(strict comaprison)")
 
@@ -228,3 +230,31 @@ if(favourite == 7){   // '12' == 12
 }
 
 if(favourite !== 46) console.log("Why not 46?")
+
+*/
+
+// Logical operators
+
+const hasDL=true;
+const hasGoodVision=true;
+
+console.log(hasDL && hasGoodVision);
+console.log(hasDL || hasGoodVision);
+console.log(!hasDL);
+
+// const shouldDrive=hasDL && hasGoodVision;
+// if(shouldDrive){
+//     console.log("Sarah is able to drive");
+// } else {
+//     console.log("Someone else should drive")
+// }
+
+const isTired=false;
+console.log(hasDL && hasGoodVision && isTired);
+
+const shouldDrive=hasDL && hasGoodVision && !isTired;
+if(shouldDrive){
+    console.log("Sarah is able to drive");
+} else {
+    console.log("Someone else should drive")
+}
