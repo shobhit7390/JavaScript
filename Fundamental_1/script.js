@@ -296,6 +296,8 @@ switch(day){
 
 // Conditional ternary operator
 
+/*
+
 const age=23;
 age>=18 ? console.log("I would like to have wine"):console.log("I will have a glass of water");
 
@@ -303,3 +305,5 @@ const drink=age>=18?'wine':'water';
 console.log(drink);
 
 console.log(`I like to drink ${age>=18?'wine':'water'}`);
+
+*/
