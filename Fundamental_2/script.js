@@ -15,6 +15,7 @@ if(hasDriversLicense) console.log("I can drive :D");
 
 // Functions
 
+/*
 function logger(){
     console.log('My name is Shobhit Yadav');
 }
@@ -36,3 +37,23 @@ console.log(fruitProcessor(4,0));
 
 const appleOrangeJuice=fruitProcessor(2,5);
 console.log(appleOrangeJuice);
+
+*/
+
+
+
+// Function Declaration
+function calcAge1(birthYear){
+    return 2023-birthYear;
+}
+
+const age1=calcAge1(1999);
+
+// Function Expression
+const calcAge2=function (birthYear){
+    return 2023-birthYear;
+}
+
+const age2=calcAge2(1999);
+console.log(age1,age2);
+
