@@ -101,6 +101,7 @@ console.log(fruitProcessor(2,3));
 
 // Reviewing Functions
 
+/*
 const calcAge = function (birthYear){
     return 2023-birthYear;
 }
@@ -121,4 +122,48 @@ const yearsUntilRetirement=function (birthYear, firstName) {
 console.log(yearsUntilRetirement(2001, 'Shobhit'));
 console.log(yearsUntilRetirement(1944, 'Mack'));
 
+*/
 
+// Arrays :
+
+const friend1='Kush';
+const friend2='Ashish';
+const friend3='Harshad';
+const friend4='Bihari';
+
+const friends=['Kush','Ashish','Harshad','Bihari'];
+console.log(friends);
+
+const y=new Array(1991,1999,2001,2004);
+console.log(y);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length-1]);
+
+friends[0]='Ankit';
+console.log(friends);
+
+const firstName='Shobhit';
+const shobhit=[firstName, 'Yadav', 2023-2001,'SWE',friends];
+console.log(shobhit);
+console.log(shobhit.length);
+
+// Exercise:
+
+const calcAge=function (birthYear){
+    return 2023-birthYear;
+}
+
+const years=[1992,1999,2001,2004,2011];
+
+const age1=calcAge(years[1]);
+const age2=calcAge(years[2]);
+const age3=calcAge(years[3]);
+
+console.log(age1,age2,age3);
+const ages=[calcAge(years[1]),calcAge(years[2]),calcAge(years[3]),calcAge(years[years.length-1])];
+
+console.log(ages);
