@@ -126,6 +126,8 @@ console.log(yearsUntilRetirement(1944, 'Mack'));
 
 // Arrays :
 
+/*
+
 const friend1='Kush';
 const friend2='Ashish';
 const friend3='Harshad';
@@ -167,3 +169,38 @@ console.log(age1,age2,age3);
 const ages=[calcAge(years[1]),calcAge(years[2]),calcAge(years[3]),calcAge(years[years.length-1])];
 
 console.log(ages);
+
+*/
+
+// Array Operation methods:
+
+const friends=['Kush','Ashish','Harshad'];
+
+// Add Elements
+const newLength=friends.push('Aman');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John');
+console.log(friends);
+
+// Remove Elements
+friends.pop();
+const popped=friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift();  // First remove
+console.log(friends);
+
+console.log(friends.indexOf('Ashish'));
+console.log(friends.indexOf('Bob'));    // -1
+
+friends.push(22);
+console.log(friends.includes('Ashish'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes('22'));
+
+if(friends.includes('Ashish')){
+    console.log("You have a friend named Ashish..!");
+}
