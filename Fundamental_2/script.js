@@ -174,6 +174,8 @@ console.log(ages);
 
 // Array Operation methods:
 
+/*
+
 const friends=['Kush','Ashish','Harshad'];
 
 // Add Elements
@@ -204,3 +206,26 @@ console.log(friends.includes('22'));
 if(friends.includes('Ashish')){
     console.log("You have a friend named Ashish..!");
 }
+
+*/
+
+// Introduction to objects:
+
+const shobhitArray=[
+    'Shobhit',
+    'Yadav',
+    2023-2001,
+    'SWE',
+    ['Tejesh','Himanshu','Akhand']
+];
+
+const shobhit={
+    firstName:'Shobhit',
+    lastName:'Yadav',
+    age:2023-2001,
+    job:'SWE',
+    friends:['Tejesh','Himanshu','Akhand']
+};
+
+console.log(shobhitArray);
+console.log(shobhit);
