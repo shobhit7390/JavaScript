@@ -275,6 +275,7 @@ console.log(`${shobhit.firstName} has ${shobhit.friends.length} friends, and his
 
 
 // Object Methods :
+/*
 
 const shobhit={
     firstName:'Shobhit',
@@ -314,3 +315,17 @@ console.log(shobhit.age);
 
 console.log(shobhit.getSummary());
 
+*/
+
+// For loop
+
+
+console.log("Lifting weights repetition 1");
+console.log("Lifting weights repetition 2");
+console.log("Lifting weights repetition 3");
+console.log("Lifting weights repetition 4");
+console.log("Lifting weights repetition 5");
+
+for(let rep=1;rep<=5;rep++){
+    console.log(`Lifting weights repetition ${rep}`);
+}
