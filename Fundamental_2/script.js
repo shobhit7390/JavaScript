@@ -210,6 +210,7 @@ if(friends.includes('Ashish')){
 */
 
 // Introduction to objects:
+/*
 
 const shobhitArray=[
     'Shobhit',
@@ -229,3 +230,41 @@ const shobhit={
 
 console.log(shobhitArray);
 console.log(shobhit);
+
+*/
+
+// Dot vs Bracket Notation 
+
+const shobhit={
+    firstName:'Shobhit',
+    lastName:'Yadav',
+    age:2023-2001,
+    job:'SWE',
+    friends:['Tejesh','Himanshu','Akhand']
+};
+
+console.log(shobhit);
+
+console.log(shobhit.firstName);
+console.log(shobhit['firstName']);
+
+const nameKey='Name';
+console.log(shobhit['first'+nameKey]);
+console.log(shobhit['last'+nameKey]);
+
+const interestedIn=prompt("What di you want to know about Shobhit? Choose b/w firstName,lastName,age,job and friends");
+
+if(shobhit[interestedIn]){
+    console.log(shobhit[interestedIn]);
+} else {
+    console.log("Wrong request ! Choose b/w firstName,lastName,age,job and friends");
+}
+
+shobhit.location='Delhi,India';
+shobhit['email']='shobhit@email.com';
+console.log(shobhit);
+
+// Exercise: Do it dynamically
+// Shobhit has 3 friends, and his best friend is called Tejesh.
+
+console.log(`${shobhit.firstName} has ${shobhit.friends.length} friends, and his best friend is called ${shobhit.friends[0]}.`);
