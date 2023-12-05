@@ -233,7 +233,9 @@ console.log(shobhit);
 
 */
 
-// Dot vs Bracket Notation 
+
+// Dot vs Bracket Notation
+/* 
 
 const shobhit={
     firstName:'Shobhit',
@@ -268,3 +270,47 @@ console.log(shobhit);
 // Shobhit has 3 friends, and his best friend is called Tejesh.
 
 console.log(`${shobhit.firstName} has ${shobhit.friends.length} friends, and his best friend is called ${shobhit.friends[0]}.`);
+
+*/
+
+
+// Object Methods :
+
+const shobhit={
+    firstName:'Shobhit',
+    lastName:'Yadav',
+    birthYear:2001,
+    job:'SWE',
+    friends:['Tejesh','Himanshu','Akhand'],
+    hasDL:true,
+
+    // calcAge: function (birthYear){
+    //     return 2023-birthYear;
+    // }
+
+    // calcAge: function (){
+    //     // console.log(this);
+    //     return 2023 - this.birthYear;
+    // }
+
+    calcAge: function (){
+        this.age = 2023 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function(){
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDL ? 'a' : 'no'} drivers's license.`; 
+    }
+};
+
+console.log(shobhit.calcAge());
+
+console.log(shobhit.age);
+console.log(shobhit.age);
+console.log(shobhit.age);
+
+// Exercise:
+// "Shobhit is a 22-year old SWE, and he has a Driver's license"
+
+console.log(shobhit.getSummary());
+
