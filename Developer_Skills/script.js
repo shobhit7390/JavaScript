@@ -10,6 +10,8 @@ console.log(calcAge(1999));
 
 */
 
+/*
+
 // PROBLEM 1:
 // We work for a company building a smart home thermometer. Our most recent task is this: "Given an array of temperatures of one day, calculate the temperature amplitude. Keep in mind that sometimes there might be a sensor error."
 
@@ -69,3 +71,51 @@ const calcTempAmplitudeNew = function (t1, t2) {
 
 const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [9, 0, 7, 1]);
 console.log(amplitudeNew);
+
+
+*/
+
+// Debugging erros
+
+const measureKelvin = function () {
+  const measurement = {
+    type: 'temp',
+    unit: 'celsius',
+    // FIX
+    value: Number(prompt('Degree Celsius:')),
+  };
+
+  // FIND
+  console.table(measurement);
+
+  //   console.log(measurement.value);
+  //   console.warn(measurement.value);
+  //   console.error(measurement.value);
+
+  const kelvin = measurement.value + 273;
+  return kelvin;
+};
+
+// console.log(measureKelvin());
+
+// Using a debugger
+const calcTempAmplitudeBug = function (t1, t2) {
+  const temps = t1.concat(t2);
+  //   console.log(temps);
+
+  let maxi = 0;
+  let mini = 0;
+  for (let i = 0; i < temps.length; i++) {
+    const curTemp = temps[i];
+    if (typeof curTemp !== 'number') continue;
+
+    // debugger;
+    if (curTemp > maxi) maxi = curTemp;
+    if (curTemp < mini) mini = curTemp;
+  }
+  console.log(maxi, mini);
+  return maxi - mini;
+};
+
+const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 7, 1]);
+console.log(amplitudeBug);
