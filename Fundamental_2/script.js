@@ -318,7 +318,7 @@ console.log(shobhit.getSummary());
 */
 
 // For loop
-
+/*
 
 console.log("Lifting weights repetition 1");
 console.log("Lifting weights repetition 2");
@@ -329,3 +329,54 @@ console.log("Lifting weights repetition 5");
 for(let rep=1;rep<=5;rep++){
     console.log(`Lifting weights repetition ${rep}`);
 }
+
+*/
+
+// Looping arrays breaking and continuing
+
+const shobhit=[
+    'Shobhit',
+    'Yadav',
+    2023-2001,
+    'SWE',
+    ['Tejesh','Himanshu','Akhand']
+];
+
+const types=[];
+
+for(let i=0;i<shobhit.length;i++){
+    console.log(shobhit[i]);
+    // types[i]=typeof shobhit[i];
+    types.push(typeof shobhit[i]);
+}
+
+console.log(types);
+
+const years=[1991,1999,2001,2004,2017];
+const ages=[];
+
+for(let i=0;i<years.length;i++){
+    ages.push(2023-years[i]);
+}
+
+console.log(ages);
+
+// continue
+console.log("---Only Strings---");
+for(let i=0;i<shobhit.length;i++){
+    if(typeof shobhit[i] !== 'string') continue;
+
+    console.log(shobhit[i], typeof shobhit[i]);
+}
+
+
+// break
+console.log("---Break with Number---");
+for(let i=0;i<shobhit.length;i++){
+    if(typeof shobhit[i] === 'number') break;
+
+    console.log(shobhit[i], typeof shobhit[i]);
+}
+
+
+
