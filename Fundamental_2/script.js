@@ -334,6 +334,7 @@ for(let rep=1;rep<=5;rep++){
 
 // Looping arrays breaking and continuing
 
+/*
 const shobhit=[
     'Shobhit',
     'Yadav',
@@ -378,5 +379,28 @@ for(let i=0;i<shobhit.length;i++){
     console.log(shobhit[i], typeof shobhit[i]);
 }
 
+*/
 
+// Looping backward and nested loop
+
+
+const shobhit=[
+    'Shobhit',
+    'Yadav',
+    2023-2001,
+    'SWE',
+    ['Tejesh','Himanshu','Akhand']
+];
+
+
+for(let i=shobhit.length-1;i>=0;i--){
+    console.log(i,shobhit[i]);
+}
+
+for(let exercise=1;exercise<4;exercise++){
+    console.log(`------Starting exercise ${exercise}`);
+    for(let rep=1;rep<6;rep++){
+        console.log(`Exercise ${exercise}: Lifting weight repetion ${rep}`);
+    }
+}
 
