@@ -383,7 +383,7 @@ for(let i=0;i<shobhit.length;i++){
 
 // Looping backward and nested loop
 
-
+/*
 const shobhit=[
     'Shobhit',
     'Yadav',
@@ -403,4 +403,27 @@ for(let exercise=1;exercise<4;exercise++){
         console.log(`Exercise ${exercise}: Lifting weight repetion ${rep}`);
     }
 }
+
+*/
+
+// While loop
+
+// for(let rep=1;rep<=5;rep++){
+//     console.log(`Lifting weight repetion ${rep}`);
+// }
+
+let rep=1;
+while(rep<=5){
+    console.log(`WHILE : Lifting weight repetion ${rep}`);
+    rep++;
+}
+
+let dice=Math.trunc(Math.random()*6)+1;
+
+while(dice !== 6){
+    console.log(`You rolled a ${dice}`);
+    dice=Math.trunc(Math.random()*6)+1;
+    if(dice === 6)console.log("Loop is about to end....");
+}
+
 
