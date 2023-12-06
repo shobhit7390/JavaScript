@@ -408,6 +408,8 @@ for(let exercise=1;exercise<4;exercise++){
 
 // While loop
 
+/*
+
 // for(let rep=1;rep<=5;rep++){
 //     console.log(`Lifting weight repetion ${rep}`);
 // }
@@ -426,4 +428,6 @@ while(dice !== 6){
     if(dice === 6)console.log("Loop is about to end....");
 }
 
+
+*/
 

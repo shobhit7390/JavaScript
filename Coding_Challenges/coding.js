@@ -335,6 +335,8 @@ Call the function with the 'totals' array
 
 // Solution :
 
+/*
+
 const bills=[22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips=[];
 const totals=[];
@@ -366,4 +368,4 @@ const calcAvereage = function (totals){
 
 console.log(calcAvereage(totals));
 
-
+*/
