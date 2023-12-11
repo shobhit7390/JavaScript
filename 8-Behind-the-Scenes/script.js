@@ -41,6 +41,8 @@ calcAge(2001);
 
 // Hoisting and TDZ
 
+/*
+
 // Variables
 console.log(me);
 // console.log(job);
@@ -83,3 +85,47 @@ const z = 3;
 console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
+
+*/
+
+// 'this' keyword :
+
+// console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2023 - birthYear);
+  console.log(this);
+};
+
+calcAge(2001);
+
+//
+const calcAgeArrow = (birthYear) => {
+  console.log(2023 - birthYear);
+  console.log(this);
+};
+
+calcAgeArrow(1999);
+
+//
+const shobhit = {
+  year: 2001,
+  calcAge: function () {
+    console.log(this);
+    console.log(2023 - this.year);
+  },
+};
+
+shobhit.calcAge();
+
+//
+const matilda = {
+  year: 2011,
+};
+
+matilda.calcAge = shobhit.calcAge;
+matilda.calcAge();
+
+//
+const f = shobhit.calcAge;
+// f();
