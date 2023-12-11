@@ -136,6 +136,8 @@ const f = shobhit.calcAge;
 
 // Regular function vs Arrow functions
 
+/*
+
 const shobhit = {
   firstName: "Shobhit",
   year: 2001,
@@ -185,4 +187,25 @@ var addArrow = (a, b) => {
   return a + b;
 };
 
-addArrow(6, 8, 3);
+// addArrow(6, 8, 3);
+
+*/
+
+// Primitives vs Object Primitive vs Reference types
+
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: "Shobhit",
+  age: 22,
+};
+
+const friend = me;
+friend.age = 27;
+
+console.log("Friend:", friend);
+console.log("Me:", me);
