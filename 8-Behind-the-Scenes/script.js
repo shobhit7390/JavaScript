@@ -90,6 +90,8 @@ console.log(z === window.z);
 
 // 'this' keyword :
 
+/*
+
 // console.log(this);
 
 const calcAge = function (birthYear) {
@@ -129,3 +131,58 @@ matilda.calcAge();
 //
 const f = shobhit.calcAge;
 // f();
+
+*/
+
+// Regular function vs Arrow functions
+
+const shobhit = {
+  firstName: "Shobhit",
+  year: 2001,
+  calcAge: function () {
+    // console.log(this);
+    console.log(2023 - this.year);
+
+    // Solution 1:
+
+    // const self = this;           // self or that
+    // const isMillenial = function () {
+    //   console.log(self);
+    //   console.log(self.year >= 1981 && self.year <= 1996);
+    // };
+
+    // Solution 2:
+
+    const isMillenial = () => {
+      console.log(this);
+      console.log(this.year >= 1981 && this.year <= 1996);
+    };
+
+    isMillenial();
+  },
+
+  greet: () => {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
+  },
+};
+
+shobhit.greet();
+shobhit.calcAge();
+
+// Arguments keyword:
+
+const addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
+};
+
+addExpr(4, 8);
+addExpr(4, 8, 3, 9);
+
+var addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+};
+
+addArrow(6, 8, 3);
