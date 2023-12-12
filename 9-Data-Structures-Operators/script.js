@@ -47,7 +47,53 @@ const restaurant = {
       `Here is your delicious pasta with ${ing1},${ing2} and ${ing3}`
     );
   },
+
+  orderPizza: function (mainIngrediant, ...otherIngrediants) {
+    console.log(mainIngrediant);
+    console.log(otherIngrediants);
+  },
 };
+
+////////////////////////////////
+// Rest Pattern and Parameters
+
+// 1) Destructuring
+// SPREAD, because on the right of =
+const arr = [1, 2, ...[3, 4]];
+
+// REST,because on the right of =
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+
+const [pizza, , risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+console.log(pizza, risotto, otherFood);
+
+// Objects
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(weekdays);
+
+// 2) Functions:
+const add = function (...numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) sum += numbers[i];
+  console.log(sum);
+};
+add(2, 4);
+add(2, 4, 5, 1, 7);
+add(2, 4, 5, 1, 7, 9, 10, 11);
+
+const x = [2, 5, 9];
+add(...x);
+
+restaurant.orderPizza("mushrooms", "onion", "olives", "spinach");
+restaurant.orderPizza("corn");
+
+/////////////////////
+// Spread Operator
+/*
 
 const arr = [7, 8, 9];
 const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
@@ -95,6 +141,8 @@ const restaurantCopy = { ...restaurant };
 restaurantCopy.name = "Ristorante Rimo";
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
+
+*/
 
 /*
 
