@@ -53,6 +53,39 @@ const restaurant = {
   },
 };
 
+const ordersSet = new Set([
+  "Pizza",
+  "Pasta",
+  "Pizza",
+  "Rissotto",
+  "Pizza",
+  "Pasta",
+]);
+console.log(ordersSet);
+
+console.log(new Set("Shobhit"));
+console.log(ordersSet.size);
+console.log(ordersSet.has("Pizza"));
+console.log(ordersSet.has("Bread"));
+ordersSet.add("Garlic Bread");
+ordersSet.add("Garlic Bread");
+ordersSet.delete("Rissotto");
+// ordersSet.clear();
+console.log(ordersSet);
+
+for (const order of ordersSet) {
+  console.log(order);
+}
+
+// Example:
+const staff = ["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"];
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+console.log(
+  new Set(["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"]).size
+);
+console.log(new Set("ShobhitYadav").size);
+
 ///////////////////////////////////////
 // Coding Challenge #2
 
@@ -76,7 +109,7 @@ BONUS: Create an object called 'scorers' which contains the names of the players
 
 GOOD LUCK 😀
 */
-
+/*
 const game = {
   team1: "Bayern Munich",
   team2: "Borrussia Dortmund",
@@ -118,8 +151,11 @@ const game = {
   },
 };
 
+*/
+
 //////////////////
 // Solution :
+/*
 
 // 1.
 for (const [index, player] of game.scored.entries()) {
@@ -128,7 +164,6 @@ for (const [index, player] of game.scored.entries()) {
 
 // 2.
 const odds = Object.values(game.odds);
-console.log(odds);
 let avg = 0;
 for (const odd of odds) {
   avg += odd;
@@ -148,6 +183,8 @@ for (const player of game.scored) {
   scorers[player] ? scorers[player]++ : (scorers[player] = 1);
 }
 console.log(scorers);
+
+*/
 
 /////////////////////////////////////////////////
 // Looping objects its keys ,values and entries
