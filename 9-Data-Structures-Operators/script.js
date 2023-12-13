@@ -54,6 +54,20 @@ const restaurant = {
   },
 };
 
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+for (const item of menu) {
+  console.log(item);
+}
+// for (const item of menu.entries()) {
+//   console.log(`${item[0] + 1}: ${item[1]}`);
+// }
+
+// Same done using destructuring
+for (const [i, el] of menu.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
+
 ///////////////////////////////////////
 // Coding Challenge #1
 
@@ -75,6 +89,7 @@ TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'. Th
 GOOD LUCK 😀
 */
 
+/*
 const game = {
   team1: "Bayern Munich",
   team2: "Borrussia Dortmund",
@@ -115,8 +130,12 @@ const game = {
     team2: 6.5,
   },
 };
+*/
 
+//////////////
 // Solution:
+/*
+
 // 1.
 const [players1, players2] = game.players;
 console.log(players1, players2);
@@ -148,7 +167,7 @@ printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
 team1 < team2 && console.log("Team 1 is more likely to win!");
 team1 > team2 && console.log("Team 2 is more likely to win!");
 
-// 7.
+*/
 
 ///////////////////////////////
 // Logical Assignment Operator
