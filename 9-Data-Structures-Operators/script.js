@@ -53,8 +53,68 @@ const restaurant = {
   },
 };
 
-/////////////////
-// Strings
+const airline = "TAP Air Portugal";
+
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+// console.log("Shobhit".toUpperCase());
+
+// Fix capitalization
+const passenger = "sHobhiT";
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect =
+  passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
+
+// Comparing emails
+const email = "hello@shobhit.io";
+const loginEmail = "   Hello@Shobhit.Io \n";
+
+// const lowerEmail = email.toLowerCase();
+// const trimmedEmail = lowerEmail.trim();
+const normalizedEmail = loginEmail.toLowerCase().trim();
+console.log(normalizedEmail);
+console.log(email === normalizedEmail);
+
+// Replacing
+const priceGB = "288,87#";
+const priceUS = priceGB.replace("#", "$").replace(",", ".");
+console.log(priceUS);
+
+const announcement =
+  "All passengers come to boarding door 23. Boarding door 23!";
+console.log(announcement.replace("door", "gate"));
+// console.log(announcement.replace(/door/g, "gate"));
+console.log(announcement.replaceAll("door", "gate"));
+
+// Booleans
+const plane = "Airbus A320neo";
+console.log(plane.includes("A320"));
+console.log(plane.includes("bng"));
+console.log(plane.startsWith("Air"));
+
+if (plane.startsWith("Airbus") && plane.endsWith("neo")) {
+  console.log("Part of the new Airbus Family");
+}
+
+// Practise Exercise
+const checkBaggage = function (items) {
+  const baggage = items.toLowerCase();
+  if (baggage.includes("knife") || baggage.includes("gun")) {
+    console.log("You are NOT allowed on board");
+  } else {
+    console.log("Welcome to board!");
+  }
+};
+
+checkBaggage("I have a laptop,some Food and a pocket Knife");
+checkBaggage("Socks and camera");
+checkBaggage("Get some snacks and a gun for protection");
+
+/*
+
+//////////////////////////////////
+// Working with Strings- Part 1
 
 const airline = "TAP Air Portugal";
 const plane = "A320";
@@ -94,6 +154,8 @@ checkMiddleSeat("3E");
 console.log(new String("jonas"));
 console.log(typeof new String("jonas"));
 console.log(typeof new String("jonas").slice(1));
+
+*/
 
 ///////////////////////////////////////
 // Coding Challenge #3
