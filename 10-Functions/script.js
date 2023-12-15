@@ -32,6 +32,7 @@ createBooking("LH123", undefined, 990);
 
 */
 
+/*
 //////////////////////////////////////////
 // Passing arguments Value vs Reference
 
@@ -66,3 +67,35 @@ const newPassport = function (person) {
 
 newPassport(shobhit);
 checkIn(flight, shobhit);
+
+*/
+
+///////////////////////////////////////////////
+// Functions accepting Callback functions
+
+const oneWord = function (str) {
+  return str.replace(/ /g, "").toLowerCase();
+};
+
+const upperFirstWord = function (str) {
+  const [first, ...others] = str.split(" ");
+  return [first.toUpperCase(), ...others].join(" ");
+};
+
+// Higher-Order Function
+const transformer = function (str, fn) {
+  console.log(`Original String: ${str}`);
+  console.log(`Transformed String: ${fn(str)}`);
+  console.log(`Transformed By: ${fn.name}`);
+};
+
+transformer("JavaScript is the best!", upperFirstWord);
+transformer("JavaScript is the best!", oneWord);
+
+// Js uses callbacks all the time
+const high5 = function () {
+  console.log("Hi");
+};
+
+document.body.addEventListener("click", high5);
+["Jonas", "Adam", "Steve"].forEach(high5);
