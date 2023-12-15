@@ -70,6 +70,7 @@ checkIn(flight, shobhit);
 
 */
 
+/*
 ///////////////////////////////////////////////
 // Functions accepting Callback functions
 
@@ -99,3 +100,23 @@ const high5 = function () {
 
 document.body.addEventListener("click", high5);
 ["Jonas", "Adam", "Steve"].forEach(high5);
+*/
+
+///////////////////////////////////////////////
+// Functions returning functions
+
+const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greeterHey = greet("Hey");
+greeterHey("Jonas");
+greeterHey("Shobhit");
+
+greet("Hello")("Shobhit");
+
+// Challenge
+const greetArr = (greeting) => (name) => console.log(`${greeting} ${name}`);
+greetArr("Welcome")("Shobhit");
